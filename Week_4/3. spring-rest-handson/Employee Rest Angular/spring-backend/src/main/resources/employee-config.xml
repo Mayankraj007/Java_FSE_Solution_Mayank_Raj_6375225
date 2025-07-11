@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <util:list id="employeeList" value-type="com.example.employee.Employee" xmlns:util="http://www.springframework.org/schema/util">
+        <bean class="com.example.employee.Employee">
+            <property name="id" value="1"/>
+            <property name="name" value="Alice"/>
+            <property name="department" value="HR"/>
+        </bean>
+        <bean class="com.example.employee.Employee">
+            <property name="id" value="2"/>
+            <property name="name" value="Bob"/>
+            <property name="department" value="IT"/>
+        </bean>
+    </util:list>
+</beans>
